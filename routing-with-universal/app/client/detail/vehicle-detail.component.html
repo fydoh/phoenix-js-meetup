@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <main class="col-sm-12" *ngIf="vehicle">
+    <div class="row">
+      <div class=col-sm-9>
+        <div class="row details-row">
+          <div class="col-sm-9">
+            <img [src]="vehicle.imageUrl" class="details-image img-responsive">
+          </div>
+          <div class="col-sm-3">
+            <div class="details-year-make">{{vehicle.title}} {{vehicle.trim}}</div>
+            <div class="details-miles">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div>Mileage:</div>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <span>{{vehicle.mileage | number}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="details-price">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div>Price:</div>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <span>{{vehicle.price | currency:'USD':true }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </main>
+</div>

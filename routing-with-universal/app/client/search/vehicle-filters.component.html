@@ -1,0 +1,16 @@
+<aside class="col-sm-2">
+    <div>
+        <input type="text" name="color" [(ngModel)]="selectedColor" />
+        <button (click)="changeColor(selectedColor)" class="btn btn-default btn-xs">...</button>        
+    </div>        
+    <div class="options">
+        <h6>Color</h6>
+        <ul class="list-unstyled">
+            <li *ngFor="let color of colors">
+                <div (click)="changeColor(color)">
+                <button [id]="color | lowercase" class="color-button" [value]="color"></button><label>  {{color}}</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>

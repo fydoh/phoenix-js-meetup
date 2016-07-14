@@ -1,0 +1,19 @@
+<main class="col-sm-10">
+    <div class="row" *ngFor="let vehicleRow of vehicles">
+        <div class="col-sm-4" *ngFor="let vehicle of vehicleRow">
+            <div class="car-column clearfix">
+                <img [src]="vehicle.imageUrl" class="img-responsive">
+                <div class="row car-info-wrap">
+                    <div class="col-sm-6">
+                        <span class="year-make">{{vehicle.title}}</span>
+                        <span class="model">{{vehicle.trim}}</span>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <span class="miles">{{vehicle.mileage}}</span>
+                        <span class="price">{{vehicle.price | currency:'USD':true }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

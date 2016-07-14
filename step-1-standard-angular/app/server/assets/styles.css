@@ -1,0 +1,185 @@
+body {
+	background: #f0f0f0;
+}
+
+.not-yet-booted-message {
+	font-size: 5em;
+	font-weight: bold;
+	color: #00AED9;
+}
+
+.environment {
+	position: absolute;
+	top: 30px;
+	margin: auto;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 5px;
+}
+
+.environment-server {
+	border: 2px solid red;
+	box-shadow: 0 0 10px red;
+}
+
+.environment-client {
+	border: 2px solid green;
+	border-color: #00AED9;
+    box-shadow: 0 0 10px #00AED9;
+}
+
+.carvana-nav {
+	width: 100%;
+	height: 102px;
+	background: url('logo.jpg') 10px no-repeat,
+	url('header-rightside.jpg') 99% no-repeat, #fff;
+}
+
+.carvana-nav ul {
+	position: relative;
+	top: 65px;
+	left: 110px;
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+.carvana-nav-signin ul{
+	left: 0;
+}
+
+.carvana-nav ul li {
+	display: inline-block;
+	padding: 0 30px 0 0;
+}
+.carvana-nav li, .carvana-nav li a {
+	color: #444444;
+}
+
+aside {
+	background: #fff;
+	height: 100vh;
+}
+
+aside h6 {
+	color: #565656;
+	text-transform: uppercase;
+}
+
+main > .row {
+	margin-bottom: 30px;
+}
+main > .row:last-of-type {
+	margin-bottom: 0;
+}
+
+input[name='color'] {
+	width: 80%;
+}
+
+.options label {
+	line-height: 21px;
+}
+
+.options .color-button {
+	vertical-align: top;
+	width:10px;
+	height: 24px;
+	display:inline-block;
+	padding-left:20px;
+	background: url('checkbox-sprite.jpg') no-repeat;
+	font-weight: normal;
+	border: 0;
+}
+
+.options .color-button:focus,
+.options .color-button:active {
+	outline: none;
+}
+
+.options .color-button + label {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	width:22px;
+	height: 21px;
+	font-weight: normal;
+	border: 0;
+}
+
+.options .color-button#white {
+background-position: 0 0;	
+}
+
+.options .color-button#silver {
+background-position: 0 -35px;	
+}
+.options .color-button#black {
+background-position: 0 -71px;	
+}
+
+.options .color-button#gray {
+background-position: 0 -108px;	
+}
+
+.options .color-button#blue {
+background-position: 0 -138px;	
+}
+
+.options .color-button#red {
+background-position: 0 -169px;	
+}
+
+.options .color-button:checked {
+	color:pink;
+}
+
+
+.car-column {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size:14px;
+	line-height: 15px;
+	background: #fff;
+	color:#444444;
+}
+.car-info-wrap {
+	margin: 10px;
+}
+
+.car-info-wrap .col-sm-6 {
+	padding: 0;
+}
+
+.year-make {
+	font-size: 1.2em;
+	color: #444444;
+	font-weight: bold;
+}
+.miles {
+	display: block;
+	color:#444444;
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.model {
+	display:block;
+	font-weight: 400;
+	font-size: 1em;
+}
+.edition {
+	font-size:12px;
+	color: #444444;
+	display:block;
+}
+.price {
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 32px;
+	color:#149ed0;
+	display: block;
+}
